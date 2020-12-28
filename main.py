@@ -82,10 +82,6 @@ def move_lrv_files(path, path_lrv, lrv_holder):
             shutil.move(path + entry, path + path_lrv + entry)
 
 
-def debug():
-    shutil.copytree('template/', '2020-12-27/')
-
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Rename gopro files to creation date')
     parser.add_argument('-p', '--path', default='/Users/felixpieschka/Pictures/GoPro/')
